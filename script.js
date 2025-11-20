@@ -1,4 +1,4 @@
-// ScrollReveal pour apparition des sections
+// Apparition fluide des sections
 const sections = document.querySelectorAll(".section");
 
 function revealSections() {
@@ -14,3 +14,6 @@ function revealSections() {
 
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
+
+// Console message
+console.log("%cPortfolio d'Anton Micale chargé avec succès", "color:#9E1111; font-size:16px;");
