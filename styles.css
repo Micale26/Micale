@@ -5,6 +5,7 @@
     --rouge-fonce: #9E1111;
     --rouge-clair: #B71C1C;
     --blanc: #F6F6F6;
+    --gris-sombre: #222;
 }
 
 /* RESET */
@@ -16,7 +17,7 @@
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #222;
+    background: var(--gris-sombre);
     color: #fff;
     line-height: 1.7;
 }
@@ -35,11 +36,6 @@ body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
-
-.psg-logo {
-    width: 120px;
-    margin-bottom: 15px;
 }
 
 /* NAVBAR */
@@ -66,50 +62,6 @@ body {
 
 .navbar a:hover {
     color: var(--bleu-fonce);
-}
-
-/* SLIDE IMAGE PSG */
-.image-slider {
-    position: relative;
-    max-width: 100%;
-    margin: 20px auto;
-}
-
-.slide {
-    display: none;
-    text-align: center;
-}
-
-.slide.active {
-    display: block;
-}
-
-.image-slider img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
 }
 
 /* SECTIONS DISPOSÉES HORIZONTALMENT */
@@ -144,7 +96,15 @@ button.next {
     font-size: 14px;
 }
 
-.section-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover
+/* FOOTER */
+.footer {
+    background: var(--bleu-fonce);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #ffdede;
+}
