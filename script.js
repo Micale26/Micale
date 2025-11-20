@@ -1,22 +1,20 @@
-// Animation d'apparition des sections
+// Apparition progressive des sections
 const sections = document.querySelectorAll('.section');
 
-const reveal = () => {
+function revealSections() {
     sections.forEach(section => {
-        const position = section.getBoundingClientRect().top;
+        const pos = section.getBoundingClientRect().top;
         const screenHeight = window.innerHeight;
 
-        if (position < screenHeight - 120) {
-            section.style.opacity = "1";
-            section.style.transform = "translateY(0px)";
+        if (pos < screenHeight - 120) {
+            section.classList.add("visible");
         }
     });
-};
+}
 
-window.addEventListener('scroll', reveal);
-window.addEventListener('load', reveal);
+window.addEventListener('scroll', revealSections);
+window.addEventListener('load', revealSections);
 
-// Message d’accueil
-window.onload = () => {
-    console.log("Bienvenue sur le portfolio d'Anton !");
-};
+
+// Message console (pro)
+console.log("%cBienvenue sur le portfolio d'Anton Micale !", "color:#9E1111; font-size: 16px;");
