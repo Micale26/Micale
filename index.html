@@ -6,7 +6,6 @@
     <title>Portfolio • Anton Micale</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <!-- HEADER AVEC IMAGE PSG -->
@@ -15,6 +14,21 @@
         <h1>Anton Micale</h1>
         <p>Étudiant en Commerce • Alternant chez On Air • Passionné de Sport & d’Événementiel</p>
     </header>
+
+    <!-- SLIDE IMAGE PSG (Carrousel) -->
+    <div class="image-slider">
+        <div class="slide active">
+            <img src="https://i.imgur.com/HkJH8ei.jpeg" alt="PSG Fans">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/ELJG6qM.jpeg" alt="PSG Players">
+        </div>
+        <div class="slide">
+            <img src="https://i.imgur.com/5q6hYdW.jpeg" alt="PSG Parc des Princes">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -28,134 +42,48 @@
         </ul>
     </nav>
 
-    <!-- SECTION 1 -->
-    <section id="about" class="section bubble">
-        <h2>1. Qui suis-je ?</h2>
+    <!-- SECTIONS DISPOSÉES HORIZONTALLEMENT -->
+    <div class="sections-container">
+        <!-- SECTION 1 -->
+        <section id="about" class="section bubble">
+            <h2>1. Qui suis-je ?</h2>
+            <p>Je m’appelle <strong>Anton Micale</strong>, étudiant en <strong>Licence 3 Commerce</strong> et alternant chez <strong>On Air</strong>. Passionné par le sport, le collectif et les projets ambitieux, je suis une personne rigoureuse, volontaire et impliquée.</p>
+            <img src="https://i.imgur.com/D8q9c2O.jpeg" class="section-img" alt="PSG Supporter">
+        </section>
 
-        <img src="https://i.imgur.com/D8q9c2O.jpeg" class="section-img" alt="PSG Supporter">
+        <!-- SECTION 2 -->
+        <section id="path" class="section bubble">
+            <h2>2. Mon parcours</h2>
+            <p>Formation, engagements personnels et expériences professionnelles marquantes.</p>
+            <img src="https://i.imgur.com/5q6hYdW.jpeg" class="section-img" alt="PSG Parc des Princes">
+        </section>
 
-        <p>Je m’appelle <strong>Anton Micale</strong>, étudiant en <strong>Licence 3 Commerce</strong> et alternant chez <strong>On Air</strong>. Passionné par le sport, le collectif et les projets ambitieux, je suis une personne rigoureuse, volontaire et impliquée.</p>
+        <!-- SECTION 3 -->
+        <section id="skills" class="section bubble">
+            <h2>3. Mes compétences</h2>
+            <p>Compétences techniques et humaines que j’ai développées au cours de mon parcours.</p>
+            <img src="https://i.imgur.com/ELJG6qM.jpeg" class="section-img" alt="PSG Players">
+        </section>
 
-        <h3>Mon état d’esprit :</h3>
-        <ul>
-            <li><strong>Sérieux</strong> – exigence personnelle élevée</li>
-            <li><strong>Rigoureux</strong> – travail structuré, qualitatif et fiable</li>
-            <li><strong>Esprit d’équipe</strong> – je progresse grâce au collectif</li>
-        </ul>
+        <!-- SECTION 4 -->
+        <section id="achievements" class="section bubble">
+            <h2>4. Réussites & Fiertés</h2>
+            <p>Mes réussites, défis relevés et projets personnels.</p>
+            <img src="https://i.imgur.com/HkJH8ei.jpeg" class="section-img" alt="PSG Fans">
+        </section>
 
-        <h3>Anecdote personnelle :</h3>
-        <p>En tant que <strong>fervent supporter du PSG</strong>, je me suis déplacé dans toute l’Europe (Espagne, Allemagne, Italie...). Cela m’a appris l’organisation, la discipline et la passion — des qualités que je retrouve dans mon travail.</p>
-    </section>
-
-    <!-- SECTION 2 -->
-    <section id="path" class="section bubble">
-        <h2>2. Mon parcours</h2>
-
-        <img src="https://i.imgur.com/5q6hYdW.jpeg" class="section-img" alt="PSG Parc des Princes">
-
-        <h3>Formations :</h3>
-        <ul>
-            <li><strong>Licence 3 Commerce</strong> – Alternance</li>
-            <li><strong>Baccalauréat Général</strong></li>
-        </ul>
-
-        <h3>Projet marquant :</h3>
-        <p>Organisation d’un événement <strong>Sephora</strong> dans un château, conçu comme un calendrier de l’avent géant. J’y ai développé :</p>
-        <ul>
-            <li>créativité</li>
-            <li>gestion de budget</li>
-            <li>pilotage logistique</li>
-            <li>travail d’équipe</li>
-        </ul>
-
-        <h3>Engagements personnels :</h3>
-        <ul>
-            <li>Maraudes chaque jeudi soir</li>
-            <li>Musculation, boxe, paddle</li>
-            <li>Déplacements PSG (France & étranger)</li>
-        </ul>
-
-        <h3>Expériences professionnelles :</h3>
-        <ul>
-            <li><strong>On Air</strong> : accueil, inscriptions, animation, communication</li>
-            <li><strong>SCP Normand</strong> : archivage, classement, comptabilité</li>
-        </ul>
-
-        <p>Ces expériences m’ont appris l’autonomie, la gestion des priorités et la relation client.</p>
-    </section>
-
-    <!-- SECTION 3 -->
-    <section id="skills" class="section bubble">
-        <h2>3. Mes compétences</h2>
-
-        <img src="https://i.imgur.com/ELJG6qM.jpeg" class="section-img" alt="PSG Players">
-
-        <h3>Compétences techniques :</h3>
-        <ul>
-            <li>Communication orale et écrite</li>
-            <li>Négociation & argumentation</li>
-            <li>Prospection & relation client</li>
-            <li>Animation commerciale</li>
-            <li>Utilisation des réseaux sociaux</li>
-            <li>Gestion CRM (Resamania)</li>
-        </ul>
-
-        <h3>Soft Skills :</h3>
-        <ul>
-            <li>Esprit d’équipe</li>
-            <li>Organisation & efficacité</li>
-            <li>Adaptabilité</li>
-            <li>Persévérance</li>
-            <li>Énergie positive</li>
-        </ul>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section id="achievements" class="section bubble">
-        <h2>4. Réussites & Fiertés</h2>
-
-        <img src="https://i.imgur.com/HkJH8ei.jpeg" class="section-img" alt="PSG Fans">
-
-        <p>Ma capacité à m’adapter rapidement en alternance est l’une de mes plus grandes fiertés : j’ai gagné la confiance de mes collègues et j’ai rapidement évolué en autonomie.</p>
-
-        <h3>Défi personnel :</h3>
-        <p>Concilier études, alternance et déplacements PSG. Une discipline de fer.</p>
-
-        <h3>Projet personnel :</h3>
-        <p>Ouvrir une salle de sport innovante : zone irox, bains froid/chaud, matériel premium.</p>
-    </section>
-
-    <!-- SECTION 5 -->
-    <section id="aspirations" class="section bubble">
-        <h2>5. Aspirations professionnelles</h2>
-
-        <img src="https://i.imgur.com/OGF9s0H.jpeg" class="section-img" alt="PSG Stadium Night">
-
-        <h3>Postes visés :</h3>
-        <ul>
-            <li>Chef de projet événementiel</li>
-            <li>Responsable marketing</li>
-            <li>Coordinateur commercial</li>
-        </ul>
-
-        <h3>Secteurs d’intérêt :</h3>
-        <ul>
-            <li>Sport / événementiel sportif</li>
-            <li>Fitness & bien-être</li>
-            <li>Loisirs et animation</li>
-        </ul>
-
-        <h3>Objectif long terme :</h3>
-        <p>Responsable marketing dans un club sportif ou créateur d’une salle de sport dans les îles.</p>
-    </section>
+        <!-- SECTION 5 -->
+        <section id="aspirations" class="section bubble">
+            <h2>5. Aspirations professionnelles</h2>
+            <p>Postes visés, secteurs d’intérêt et objectif long terme.</p>
+            <img src="https://i.imgur.com/OGF9s0H.jpeg" class="section-img" alt="PSG Stadium Night">
+        </section>
+    </div>
 
     <!-- CONCLUSION -->
     <section id="conclusion" class="section bubble">
         <h2>6. Conclusion</h2>
-
-        <p>Je suis un jeune professionnel sérieux, passionné et déterminé, prêt à m’investir dans un projet ambitieux et humain.</p>
-
-        <p>Sujets que j’aimerais aborder : mon évolution en alternance, mes idées marketing et mes projets futurs.</p>
+        <p>Je suis un jeune professionnel passionné, déterminé et prêt à m’investir dans un projet ambitieux.</p>
     </section>
 
     <footer class="footer">
