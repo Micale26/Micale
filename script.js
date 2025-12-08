@@ -1,19 +1,18 @@
-// Apparition fluide des sections
-const sections = document.querySelectorAll(".section");
-
-function revealSections() {
-    sections.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-        const screen = window.innerHeight;
-
-        if (top < screen - 120) {
-            section.classList.add("visible");
-        }
+// script.js — pour des interactions futures, si besoin
+// Par exemple : scrolling fluide
+document.addEventListener("DOMContentLoaded", function() {
+  const links = document.querySelectorAll('nav a');
+  links.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 20,
+          behavior: 'smooth'
+        });
+      }
     });
-}
-
-window.addEventListener("scroll", revealSections);
-window.addEventListener("load", revealSections);
-
-// Console message
-console.log("%cPortfolio d'Anton Micale chargé avec succès", "color:#9E1111; font-size:16px;");
+  });
+});
