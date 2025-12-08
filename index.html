@@ -3,68 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Portfolio — Anton Micale</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Anton Micale</h1>
+
+  <header class="navbar">
+    <div class="logo">A. MICALE</div>
     <nav>
       <ul>
-        <li><a href="#identity">Identité</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#aspirations">Aspirations</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#slide1">Accueil</a></li>
+        <li><a href="#slide2">Profil</a></li>
+        <li><a href="#slide3">Parcours</a></li>
+        <li><a href="#slide4">Compétences</a></li>
+        <li><a href="#slide5">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="identity">
-      <h2>Qui suis-je ?</h2>
-      <p>Étudiant en Licence 3 Commerce & alternant — passionné par le sport, l'événementiel, le challenge, le collectif.</p>
-    </section>
+  <section class="slide" id="slide1">
+    <div class="content">
+      <h1>Anton Micale</h1>
+      <p>Étudiant en Commerce & Alternant — Motivé, rigoureux et passionné par l’événementiel & le sport.</p>
+      <a href="#slide2" class="btn">Découvrir ↓</a>
+    </div>
+  </section>
 
-    <section id="parcours">
+  <section class="slide" id="slide2">
+    <div class="content">
+      <h2>Profil</h2>
+      <p>
+        Je suis un étudiant en Licence Commerce, alternant dans le domaine du service et du sport.
+        Travailleur, ambitieux et orienté résultats, j’aime m’impliquer dans des projets stimulants et collectifs.
+      </p>
+    </div>
+  </section>
+
+  <section class="slide" id="slide3">
+    <div class="content">
       <h2>Parcours</h2>
-      <ul>
-        <li>Licence 3 Commerce – Alternance</li>
-        <li>Baccalauréat Général</li>
-        <li>Expériences : On Air (accueil / animation), SCP Normand (archivage, comptabilité)</li>
-        <li>Projets : organisation événementielle, gestion logistique, animation…</li>
+      <ul class="list">
+        <li>🎓 Licence 3 Commerce — Alternance</li>
+        <li>💼 Expériences : On Air, SCP Normand, projets événementiels</li>
+        <li>📚 Projets : gestion, accueil, animation, organisation</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="competences">
+  <section class="slide" id="slide4">
+    <div class="content">
       <h2>Compétences</h2>
-      <h3>Techniques & professionnelles</h3>
-      <ul>
-        <li>Communication orale & écrite</li>
-        <li>Négociation & relation client</li>
-        <li>Animation commerciale / événementielle</li>
-        <li>Utilisation réseaux sociaux, CRM, outils bureautiques…</li>
-      </ul>
-      <h3>Soft skills</h3>
-      <ul>
-        <li>Esprit d’équipe, rigueur, organisation</li>
-        <li>Adaptabilité, persévérance, énergie</li>
-      </ul>
-    </section>
+      <div class="skills">
+        <div class="skill-card">Communication</div>
+        <div class="skill-card">Relation Client</div>
+        <div class="skill-card">Organisation</div>
+        <div class="skill-card">Animation</div>
+        <div class="skill-card">Réseaux sociaux</div>
+        <div class="skill-card">Esprit d’équipe</div>
+      </div>
+    </div>
+  </section>
 
-    <section id="aspirations">
-      <h2>Aspirations & Projet</h2>
-      <p>Ambitions : chef de projet événementiel, responsable marketing, coordinateur commercial — dans le sport, l’événementiel ou le bien-être.</p>
-      <p>Projet personnel : créer une salle de sport / loisirs innovante.</p>
-    </section>
-  </main>
-
-  <footer id="contact">
-    <h2>Contact</h2>
-    <p>Email : ton.email@example.com</p>
-    <p>Téléphone : 07 XX XX XX XX</p>
-    <p>LinkedIn : <a href="#" target="_blank">Ton profil</a></p>
-  </footer>
+  <section class="slide" id="slide5">
+    <div class="content">
+      <h2>Contact</h2>
+      <p>Email : ton.email@example.com</p>
+      <p>Téléphone : 07 XX XX XX XX</p>
+      <p><a href="#" class="link">LinkedIn</a></p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
