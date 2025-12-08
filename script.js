@@ -1,18 +1,24 @@
-// script.js — pour des interactions futures, si besoin
-// Par exemple : scrolling fluide
-document.addEventListener("DOMContentLoaded", function() {
-  const links = document.querySelectorAll('nav a');
-  links.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const target = document.getElementById(targetId);
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 20,
-          behavior: 'smooth'
-        });
-      }
+// Apparition des éléments au scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+});
+
+document.querySelectorAll(".content").forEach((section) => {
+  observer.observe(section);
+});
+
+// Smooth scroll navbar (déjà géré par CSS mais plus fluide en JS)
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    window.scrollTo({
+      top: target.offsetTop - 20,
+      behavior: "smooth"
     });
   });
 });
