@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Anton Micale</h1>
+    <nav>
+      <ul>
+        <li><a href="#identity">Identité</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#aspirations">Aspirations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="identity">
+      <h2>Qui suis-je ?</h2>
+      <p>Étudiant en Licence 3 Commerce & alternant — passionné par le sport, l'événementiel, le challenge, le collectif.</p>
+    </section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <ul>
+        <li>Licence 3 Commerce – Alternance</li>
+        <li>Baccalauréat Général</li>
+        <li>Expériences : On Air (accueil / animation), SCP Normand (archivage, comptabilité)</li>
+        <li>Projets : organisation événementielle, gestion logistique, animation…</li>
+      </ul>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <h3>Techniques & professionnelles</h3>
+      <ul>
+        <li>Communication orale & écrite</li>
+        <li>Négociation & relation client</li>
+        <li>Animation commerciale / événementielle</li>
+        <li>Utilisation réseaux sociaux, CRM, outils bureautiques…</li>
+      </ul>
+      <h3>Soft skills</h3>
+      <ul>
+        <li>Esprit d’équipe, rigueur, organisation</li>
+        <li>Adaptabilité, persévérance, énergie</li>
+      </ul>
+    </section>
+
+    <section id="aspirations">
+      <h2>Aspirations & Projet</h2>
+      <p>Ambitions : chef de projet événementiel, responsable marketing, coordinateur commercial — dans le sport, l’événementiel ou le bien-être.</p>
+      <p>Projet personnel : créer une salle de sport / loisirs innovante.</p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email : ton.email@example.com</p>
+    <p>Téléphone : 07 XX XX XX XX</p>
+    <p>LinkedIn : <a href="#" target="_blank">Ton profil</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
